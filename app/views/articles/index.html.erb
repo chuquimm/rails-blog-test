@@ -1,10 +1,10 @@
 
-<h1>Listing articles</h1>
+<h1>Lista de artículos</h1>
  
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th>Título</th>
+    <th>Texto</th>
     <th colspan='3'></th>
   </tr>
  
@@ -12,12 +12,12 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
+      <td><%= link_to 'Mostrar', article_path(article) %></td>
+      <td><%= link_to 'Editar', edit_article_path(article) %></td>
+      <td><%= link_to 'Eliminar', article_path(article),
               method: :delete,
               data: { confirm: 'Estas seguro?' } %></td>
     </tr>
   <% end %>
 </table>
-<%= link_to 'New article', new_article_path %>
+<%= link_to 'Nuevo artículo', new_article_path %>
